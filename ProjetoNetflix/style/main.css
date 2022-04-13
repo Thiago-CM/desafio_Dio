@@ -1,0 +1,98 @@
+/*Variaveis das cores principais*/
+:root{
+    --vermelho:#E50914;
+    --preta:#141414;
+}
+/*Resetado o dimensionamento do navegador*/
+*{
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+/*********ELEMENTOS BASE*********/
+/*Configurando a cor da fonte e o tipo de fonte*/
+body{
+    background:var(--preta);
+    font-family: 'Roboto', sans-serif;
+    color: rgba(255, 255, 255, 0.904);
+}
+/*configurando o posicionamento dos itens que compõem o meu cabecalho  */
+header .container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+/*Propriedade do logo do cabecalho*/
+header .logo{
+    margin-left: 5px;
+    color: var(--vermelho);
+    font-family: 'Open Sans', sans-serif;
+    font-size: 50px;
+}
+/*botões do cabecalho*/
+header nav a{
+    text-decoration:none;
+    color: #aaa;
+    margin-right:10px;
+}
+/*Destacando itens do cabecalho quando passa o mouse*/
+header nav a:hover{
+    color:#fff;
+}
+/******FILME PRINCIPAL******/
+.filme-principal{
+    font-size: 16px;
+    background:linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50) 100%) ,url(' /img/capa-house.jpg');
+    height: 450px;
+    background-size:cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+.filme-principal .descricao{
+    margin-top: 15px;
+    margin-bottom:90px;
+}
+.filme-principal .titulo{
+    margin-top: 15%;
+    font-size: 40px;
+}
+/*Estilizando os botoes*/
+.botao{
+    background-color:rgba(0,0,0,.50) ;
+    border: none;
+    color: rgba(255, 255, 255, 0.904);
+
+    padding: 15px 30px;
+    margin-right: 10px;
+    font-size: 12px;
+
+    cursor: pointer;
+    transition: .3s ease all;
+}
+.botao:hover{
+    background-color: white;
+    color: black;
+}
+.botao i{
+    margin-right: 9px;
+}
+.container{
+    margin-left: 20px;
+}
+.filme-principal .container{
+    width: 100%;
+}
+.box-filme{
+    height: 100%;
+    width: 100%;
+    display: block;
+    
+}
+
+.carrrosel-filmes{
+    margin-top: 5px;
+}
